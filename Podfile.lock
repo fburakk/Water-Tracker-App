@@ -1,0 +1,30 @@
+PODS:
+  - ChartProgressBar (1.0.4)
+  - Realm (10.28.5):
+    - Realm/Headers (= 10.28.5)
+  - Realm/Headers (10.28.5)
+  - RealmSwift (10.28.5):
+    - Realm (= 10.28.5)
+  - WaveAnimationView (1.0.2)
+
+DEPENDENCIES:
+  - ChartProgressBar
+  - RealmSwift (~> 10)
+  - WaveAnimationView
+
+SPEC REPOS:
+  trunk:
+    - ChartProgressBar
+    - Realm
+    - RealmSwift
+    - WaveAnimationView
+
+SPEC CHECKSUMS:
+  ChartProgressBar: 1fe24fc286de1a3a8d02dcbdf6bc779c8e85865b
+  Realm: eb7f6a7a8395906822e6fab71eb8496d6d52b318
+  RealmSwift: 6b54904d4a236de143f3411a757641fd74e9cb3d
+  WaveAnimationView: 1ffdf3184884eb3270f4b19cc2e69893fec16b9d
+
+PODFILE CHECKSUM: 186fb6808ffa735b647ebebdbeb5757139a56571
+
+COCOAPODS: 1.11.2

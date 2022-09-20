@@ -24,13 +24,17 @@ class DailyVC: UIViewController {
         realmManager.getStats()
     }
     
+    @IBAction func xButton(_ sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
     func goalH(goal:Double) -> CGFloat {
         
-        if goal >= 3000 {
-            return 170
+        if goal >= 5000 {
+            return 462
             
         }else{
-            return 170*goal/3000
+            return 462*goal/5000
         }
     }
     
@@ -56,9 +60,9 @@ extension DailyVC: UICollectionViewDelegate,UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DailyCollectionCell
         
         cell.goalView.layer.masksToBounds = true
-        cell.goalView.layer.cornerRadius = 10
-        cell.goalView.layer.borderWidth = 0.5
-        cell.goalView.layer.borderColor = UIColor.black.cgColor
+        cell.goalView.layer.cornerRadius = 18
+        cell.goalView.layer.borderWidth = 0.8
+        cell.goalView.layer.borderColor = UIColor.darkGray.cgColor
         
         cell.goalHeight.constant = goalH(goal: waterIndex.goal)
         cell.currentHeight.constant = currentH(current: waterIndex.current, goal: waterIndex.goal)
